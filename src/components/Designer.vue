@@ -34,7 +34,7 @@ const onMoveDown = (obj, objIndex) => {
   rows[objIndex] = nextRow
 }
 
-const onDeleteRow = (row, rowIndex) => {
+const onDeleteRow = (rowIndex) => {
   const rows = props.modelValue.rows
   rows.splice(rowIndex, 1)
 }
@@ -43,13 +43,13 @@ const onAddRow = () => {
   const rows = props.modelValue.rows
   rows.push({
     id: idGenerator('row'),
-    title: `${rows.length + 1} Row`,
-    description: `${rows.length + 1} Row description`,
+    title: `Row ${rows.length + 1}`,
+    description: `Row ${rows.length + 1} description`,
     cols: [
       {
         id: idGenerator('col'),
-        title: '1 Column',
-        description: '1 Column description',
+        title: 'Col 1',
+        description: 'Col 1 description',
         fields: [],
       },
     ],
@@ -60,8 +60,8 @@ const onAddColInRow = (row) => {
   const cols = row.cols
   cols.push({
     id: idGenerator('col'),
-    title: `${row.cols.length + 1} Column`,
-    description: `${row.cols.length + 1} Column description`,
+    title: `Col ${row.cols.length + 1}`,
+    description: `Col ${row.cols.length + 1} description`,
     fields: [],
   })
 }
@@ -125,8 +125,7 @@ const onDrop = (e, col) => {
               <Icon name="arrow-down-s" />
             </button>
 
-            <button v-if="props.modelValue.rows.length > 1" class="btn" title="Delete"
-              @click="onDeleteRow(row, rowIndex)">
+            <button v-if="props.modelValue.rows.length > 1" class="btn" title="Delete" @click="onDeleteRow(rowIndex)">
               <Icon name="delete-bin" />
             </button>
           </div>
@@ -161,10 +160,10 @@ const onDrop = (e, col) => {
             <div class="col-content">
               <div class="field" v-for="field in col.fields" :key="field.id" @click="onSelectField(field)">
                 <div class="field-header">
-                  <div class="item-icon">
+                  <div class="field-icon">
                     <Icon size="25px" :name="field.icon" />
                   </div>
-                  <div class="item-info">
+                  <div class="field-info">
                     <strong>{{ field.title }}</strong>
                     ({{ field.type }})
                   </div>

@@ -12,65 +12,17 @@ const formBuilderJSON = {
           fields: [
             {
               id: 1,
-              title: 'Text',
+              title: 'Input',
               icon: 'pencil',
               type: 'text',
-              placeholder: 'Enter text',
-              description: 'This is a text field',
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: 'Col 2',
-          description: 'Col 2 description',
-          fields: [
-            {
-              id: 4,
-              title: 'Textarea',
-              icon: 'file-text',
-              type: 'textarea',
-              placeholder: 'Enter text',
-              description: 'This is a textarea field',
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: 2,
-      title: 'Row 2',
-      description: 'Row 2 description',
-      cols: [
-        {
-          id: 3,
-          title: 'Col 3',
-          description: 'Col 3 description',
-          fields: [
-            {
-              id: 5,
-              title: 'Select',
-              icon: 'archive',
-              type: 'select',
-              placeholder: 'Select an option',
-              description: 'This is a select field',
-              options: [
-                {
-                  id: 1,
-                  label: 'Option 1',
-                  value: 'option-1',
-                },
-                {
-                  id: 2,
-                  label: 'Option 2',
-                  value: 'option-2',
-                },
-                {
-                  id: 3,
-                  label: 'Option 3',
-                  value: 'option-3',
-                },
-              ],
+              style: {
+                width: '100%',
+                backgroundColor: 'white',
+                color: 'black',
+                borderColor: '#ccc',
+                borderRadius: '4px',
+                padding: '8px',
+              },
             },
           ],
         },

@@ -10,8 +10,8 @@ const formBuilderJSON = reactive(hardFormBuilderJSON)
 
 const selectedField = ref({
   id: 0,
-  title: 'Field',
-  icon: 'pencil',
+  title: '',
+  icon: '',
 })
 
 const mode = ref('designer')
@@ -67,7 +67,7 @@ const changeSelectedField = (field) => {
 }
 
 .form-builder {
-  min-width: 1500px;
+  max-width: 1600px;
   min-height: 100%;
 }
 
@@ -80,7 +80,13 @@ const changeSelectedField = (field) => {
 
 .form-builder-wrapper {
   display: grid;
-  grid-template-columns: 2fr 14fr 3fr;
+  grid-template-columns: 200px 1000px 250px;
   gap: .5em;
+}
+
+@media (max-width: 1200px) {
+  .form-builder-wrapper {
+    grid-template-columns: 100vw;
+  }
 }
 </style>
