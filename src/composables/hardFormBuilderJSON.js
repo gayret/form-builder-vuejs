@@ -17,8 +17,8 @@ const formBuilderJSON = {
               type: 'text',
               style: {
                 width: '100%',
-                backgroundColor: 'white',
-                color: 'black',
+                backgroundColor: '#ffffff',
+                color: '#222222',
                 borderColor: '#ccc',
                 borderRadius: '4px',
                 padding: '8px',
