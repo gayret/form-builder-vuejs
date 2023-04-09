@@ -54,7 +54,6 @@ const onRemoveOption = (options, optionIndex) => {
           </div>
           <div class="propertie-content">
             <div class="propertie-row">
-
               <div class="type" v-if="isInput(field.type)">
                 <label for="type">Type</label>
                 <select name="type" id="type" v-model="field.type">
@@ -94,7 +93,7 @@ const onRemoveOption = (options, optionIndex) => {
         </div>
       </div>
 
-      <div class="design-properties">
+      <div class="design">
         <h4>Design properties</h4>
         <div class="propertie">
           <div class="background-color">
@@ -148,7 +147,7 @@ h4 {
   text-align: right;
 }
 
-.design-properties h4 {
+.design h4 {
   margin-top: 2em;
 }
 </style>

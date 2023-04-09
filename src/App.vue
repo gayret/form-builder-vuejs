@@ -46,10 +46,11 @@ const changeSelectedField = (field) => {
     <footer
       style="font-size: 10px; font-weight: 200; display: flex; justify-content: space-around; width: 100%; margin-top: 2em">
       <p>
-        Document on <a href="https://medium.com/@safa">Medium</a>
+        Document on <a
+          href="https://safa.medium.com/form-builder-nas%C4%B1l-yap%C4%B1l%C4%B1r-vuejs-ile-87527be943bd">Medium</a>
       </p>
       <p>
-        Source on <a href="https://github.com/gayret">GitHub</a>
+        Source on <a href="https://github.com/gayret/form-builder-vuejs">GitHub</a>
       </p>
       <p>
         Developed by <a href="https://safagayret.com">Safa Gayret</a>

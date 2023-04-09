@@ -1,6 +1,5 @@
 
 <script setup>
-import { reactive } from 'vue'
 import Icon from './Icon.vue'
 import idGenerator from '../composables/idGenerator'
 
@@ -10,10 +9,6 @@ const props = defineProps({
   modelValue: {
     type: Object,
   },
-})
-
-const state = reactive({
-  selectedField: null,
 })
 
 const onSelectField = (field) => {
