@@ -81,7 +81,7 @@ const changeSelectedField = (field) => {
 
 .form-builder-wrapper {
   display: grid;
-  grid-template-columns: 200px 1000px 250px;
+  grid-template-columns: 1fr 1000px 1fr;
   gap: .5em;
 }
 
